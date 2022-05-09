@@ -26,7 +26,7 @@ const mapDispatchToProps = (dispatch) =>{
 class App extends Component {
 
 	componentDidMount(){
-		const {getRobots, robots} = this.props;
+		const {getRobots} = this.props;
 		getRobots();
 		console.log(process.env.REACT_APP_EXAMPLE, process.env.REACT_APP_EXAMPLE2)
 	}
