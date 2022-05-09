@@ -7,23 +7,14 @@ jobs:
       - checkout
       - run: echo "npm installing"
       - run: npm install
-      - run: echo "npm starting"
-      - run: npm start
-  build2:
-    docker:
-      - image: circleci/node
-    steps:
-      - checkout
-      - run: echo "npm installing"
-      - run: npm install
       - run: echo "npm building"
       - run: npm run build
 workflows:
   version: 2
-  build1_build2:
+  build1:
     jobs:
       - build1
-      - build2
+   
 
 
 
