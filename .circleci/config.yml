@@ -12,12 +12,12 @@ jobs:
     steps:
       - checkout
       - run: echo "a first hello"
-  workflows:
-    version: 2
-    build1_build2:
-      jobs:
-        - build1
-        - build2
+workflows:
+  version: 2
+  build1_build2:
+    jobs:
+      - build1
+      - build2
 
 
 
